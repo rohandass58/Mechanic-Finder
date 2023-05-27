@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mechanic Availability</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Quick Care</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="text-center mt-5">Mechanic's Availability</h1>
+      <form id="search-form" class="text-center mt-4">
+        <div class="form-group">
+          <label for="location-input"></label>
+          <select id="location-input" class="form-control" required>
+            <option value="">Select a city:</option>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Gurgaon">Gurgaon</option>
+            <option value="Faridabad">Faridabad</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Noida">Noida</option>
+            <option value="Ghaziabad">Ghaziabad</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+      <div id="drivers-list" class="mt-5"></div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="container">
+      &copy; 2023 Quick Care. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
